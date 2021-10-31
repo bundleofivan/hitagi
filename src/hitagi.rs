@@ -22,4 +22,8 @@ impl Hitagi {
         open_connection(port.clone());
         Hitagi { port: port }
     }
+
+    pub fn port(&self) -> &String {
+        &self.port
+    }
 }
